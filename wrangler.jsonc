@@ -6,29 +6,28 @@
     "directory": "./dist",
     "binding": "ASSETS"
   },
-  // "d1_databases": [
-  //   {
-  //     "binding": "DB",
-  //     "database_name": "dojo_local_db",
-  //     "database_id": "123",
-  //     "migrations_dir": "./src/server/db/migrations",
-  //   },
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dojo_local_db",
+      "database_id": "123",
+      "migrations_dir": "./src/server/db/migrations"
+    }
+  ],
   "env": {
     "staging": {
       "vars": {
         "ENVIRONMENT": "staging",
         "CF_ACCESS_DOMAIN": "https://astro-bun-cloudflare-drizzle-hono.cloudflareaccess.com/cdn-cgi/access/certs",
         "POLICY_AUD": "185b1bf1385f50eed395abed35449967974881f1b0725fc4e00ec8e0c453ef55"
-      }
-      // "d1_databases": [
-      //   {
-      //     "binding": "DB",
-      //     "database_name": "dojo_staging_db",
-      //     "database_id": "9bbf2fd5-766d-4b3d-9fbe-9f26ae89b7f6",
-      //     "migrations_dir": "./src/server/db/migrations",
-      //   },
-      // ],
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "dojo_staging_db",
+          "database_id": "f0e40a90-b3f9-4b79-9759-98dd04b5d1ea"
+        }
+      ]
     },
     "production": {
       "vars": {

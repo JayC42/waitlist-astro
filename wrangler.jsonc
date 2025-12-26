@@ -25,7 +25,8 @@
         {
           "binding": "DB",
           "database_name": "dojo_staging_db",
-          "database_id": "f0e40a90-b3f9-4b79-9759-98dd04b5d1ea"
+          "database_id": "f0e40a90-b3f9-4b79-9759-98dd04b5d1ea",
+          "migrations_dir": "./src/server/db/migrations"
         }
       ]
     },
